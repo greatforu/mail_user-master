@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.effect.GaussianBlur?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="562.0" prefWidth="667.0" xmlns="http://javafx.com/javafx/8.0.102" xmlns:fx="http://javafx.com/fxml/1" fx:controller="SignInController">
+   <children>
+      <ImageView fx:id="image1" fitHeight="562.0" fitWidth="927.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@Capture.PNG" />
+         </image>
+         <effect>
+            <GaussianBlur radius="23.39">
+            </GaussianBlur>
+         </effect>
+      </ImageView>
+      <Label fx:id="from" layoutX="14.0" layoutY="14.0" prefHeight="41.0" prefWidth="799.0" text="Label" textFill="WHITE">
+         <font>
+            <Font size="20.0" />
+         </font></Label>
+      <Label fx:id="subjectLabel" layoutX="14.0" layoutY="55.0" prefHeight="41.0" prefWidth="799.0" text="Label" textFill="WHITE">
+         <font>
+            <Font size="20.0" />
+         </font></Label>
+      <Label fx:id="messageLabel" layoutX="13.0" layoutY="171.0" prefHeight="359.0" prefWidth="799.0" text="Label" textFill="WHITE">
+         <font>
+            <Font size="20.0" />
+         </font></Label>
+      <Label fx:id="date" layoutX="14.0" layoutY="104.0" prefHeight="41.0" prefWidth="799.0" text="Label" textFill="WHITE">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

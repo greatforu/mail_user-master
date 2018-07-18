@@ -1,0 +1,29 @@
+    .jfx-tab-pane > .tab-header-area > .headers-region {
+        -fx-alignment: center;
+        -fx-background-color: rgba(0,31,33,0.93);
+    }
+
+    .jfx-tab-pane > .tab-header-area > .tab-header-background {
+        -fx-border-width: 3;
+        -fx-background-color: rgba(0,31,63,0.93);
+    }
+    .tab:selected{
+        -fx-background-color: rgba(0,56,128,0.93);
+    }
+    .jfx-text-field,.jfx-text-area{
+        -fx-text-fill: rgba(122,70,13,0.93) ;
+    }
+    #username{
+        -fx-text-fill: #ffffff;
+    }
+    #to,#subject,#message{
+        -fx-text-fill: rgba(0,31,63,0.93);
+    }
+    #advanced{
+        -fx-background-color: #248eab;
+    }
+    #cool{
+        -fx-border-radius: 5;
+        -fx-border-width: 3;
+        -fx-border-color: rgba(0,31,63,0.93);
+    }

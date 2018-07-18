@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXSpinner?>
+<?import com.jfoenix.controls.JFXTabPane?>
+<?import com.jfoenix.controls.JFXTextArea?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.effect.GaussianBlur?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<JFXTabPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="562.0" prefWidth="667.0" stylesheets="Design.css" xmlns="http://javafx.com/javafx/8.0.102" xmlns:fx="http://javafx.com/fxml/1" fx:controller="SignInController">
+   <tabs>
+      <Tab text="Send Mail">
+        <content>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+               <children>
+                  <ImageView fx:id="image" fitHeight="581.0" fitWidth="857.0" layoutX="-88.0" layoutY="-5.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@Capture.PNG" />
+                     </image>
+                     <effect>
+                        <GaussianBlur radius="22.6" />
+                     </effect>
+                  </ImageView>
+                  <JFXTextField fx:id="to" focusColor="#90702cf5" labelFloat="true" layoutX="33.0" layoutY="41.0" prefHeight="30.0" prefWidth="603.0" promptText="To">
+                     <font>
+                        <Font size="23.0" />
+                     </font>
+                  </JFXTextField>
+                  <JFXTextField fx:id="subject" focusColor="#90702c" labelFloat="true" layoutX="33.0" layoutY="112.0" prefHeight="30.0" prefWidth="603.0" promptText="Subject">
+                     <font>
+                        <Font size="23.0" />
+                     </font>
+                  </JFXTextField>
+                  <JFXTextArea fx:id="message" focusColor="#90702c" labelFloat="true" layoutX="39.0" layoutY="200.0" prefHeight="187.0" prefWidth="604.0" promptText="Message">
+                     <font>
+                        <Font size="23.0" />
+                     </font>
+                  </JFXTextArea>
+                   <JFXButton fx:id="sendMailButton" buttonType="RAISED" layoutX="289.0" layoutY="435.0" onAction="#sendMailAction" ripplerFill="#becacded" style="-fx-background-color: #248eab;" text="Send Mail" textFill="#001f3f">
+                       <font>
+                           <Font size="18.0" />
+                       </font>
+                   </JFXButton>
+                  <JFXButton fx:id="attach" buttonType="RAISED" layoutX="591.0" layoutY="30.0" onAction="#attachAction" prefHeight="64.0" prefWidth="42.0">
+                     <graphic>
+                        <ImageView fitHeight="28.0" fitWidth="52.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@1491082732_paper%20clip.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </JFXButton>
+                  <JFXSpinner fx:id="spinner" layoutX="325.0" layoutY="439.0" visible="false" />
+               </children>
+            </AnchorPane>
+        </content>
+      </Tab>
+      <Tab text="Receive Mail">
+        <content>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+               <children>
+                  <ImageView fitHeight="552.0" fitWidth="792.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@Capture.PNG" />
+                     </image>
+                     <effect>
+                        <GaussianBlur radius="21.03" />
+                     </effect>
+                  </ImageView>
+                  <Label fx:id="mail1" layoutX="19.0" layoutY="59.0" opacity="0.0" prefHeight="60.0" prefWidth="604.0" text="Label" textFill="WHITE">
+                     <font>
+                        <Font size="27.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="mail2" layoutX="14.0" layoutY="119.0" opacity="0.0" prefHeight="60.0" prefWidth="604.0" text="Label" textFill="WHITE">
+                     <font>
+                        <Font size="27.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="mail3" layoutX="14.0" layoutY="179.0" opacity="0.0" prefHeight="60.0" prefWidth="604.0" text="Label" textFill="WHITE">
+                     <font>
+                        <Font size="27.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="mail4" layoutX="14.0" layoutY="234.0" opacity="0.0" prefHeight="60.0" prefWidth="604.0" text="Label" textFill="WHITE">
+                     <font>
+                        <Font size="27.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="mail5" layoutX="14.0" layoutY="294.0" opacity="0.0" prefHeight="60.0" prefWidth="604.0" text="Label" textFill="WHITE">
+                     <font>
+                        <Font size="27.0" />
+                     </font>
+                  </Label>
+                  <JFXButton fx:id="receiveMailButton" buttonType="RAISED" layoutX="254.0" layoutY="215.0" onAction="#getMailAction" ripplerFill="#becacded" style="-fx-background-color: #248eab;" text="Receive Mail" textFill="#001f3f">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </JFXButton>
+               </children></AnchorPane>
+        </content>
+      </Tab>
+   </tabs>
+</JFXTabPane>
